@@ -368,9 +368,11 @@ contract MasterBrewer is Ownable {
                 10000
             );
             safeBREWTransfer(feeaddr, forfeited.sub(distributed));
-            pool.accBREWPerShare = pool.accBREWPerShare.add(
-                (distributed).mul(1e12).div(pool.lpSupply.sub(_amount))
-            );
+            if (pool.lpSupply.sub(_amount) > 0) {
+                pool.accBREWPerShare = pool.accBREWPerShare.add(
+                    (distributed).mul(1e12).div(pool.lpSupply.sub(_amount))
+                );
+            }
         } else {
             pending = fullPending;
         }
