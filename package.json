@@ -1,0 +1,23 @@
+{
+  "name": "brew-finance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoonGusto/Brew-Finance.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoonGusto/Brew-Finance/issues"
+  },
+  "homepage": "https://github.com/MoonGusto/Brew-Finance#readme",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "hardhat": "^2.6.7"
+  }
+}
